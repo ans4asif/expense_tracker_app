@@ -10,8 +10,9 @@ export const Balance = () => {
     // console.log(transactions)
    
     const amounts=transactions.map(transaction=>transaction.amount);
+    console.log(amounts.reduce((acc,item)=>(acc+=item),0).toFixed(2))
      const total=amounts.reduce((acc,item)=>(acc+=item),0).toFixed(2);
-    
+     
     return (
         <div>
             <h3>Your Balance</h3>
