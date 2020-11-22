@@ -8,8 +8,7 @@ export const AccountSummary = () => {
 
    
     const transactionalAmounts=transactions.map((transaction)=>transaction.amount);
-    // const income=transactionalAmounts.filter(item=>item>0).reduce((acc,item)=>(acc+=item),0).toFixed(1);
-    // const expense=transactionalAmounts.filter(item=>item<0).reduce((acc,item)=>(acc+=item),0).toFixed(1);
+
     console.log(transactionalAmounts);
     const income=( transactionalAmounts
     .filter(transaction=>transaction >0)
